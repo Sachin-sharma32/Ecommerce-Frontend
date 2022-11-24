@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .footer__text{
+    @apply text-sm text-gray-light
+  }
+  .footer__container{
+    @apply flex flex-col gap-5 w-full justify-start mt-5 p-0
+  }
+  .footer{
+ }
+ .hero__user__img{
+  @apply rounded-full
+ }
+ .how__number{
+  @apply text-7xl font-bold text-gray-lighter mb-2
+}
+  .how__heading{
+    @apply text-xl font-bold text-main-gray mb-6
+  }
+  .how__text{
+    @apply text-gray-light
+  }
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family:"Rubik";
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: black;
+    background: white;
+  }
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  @apply p-10 gap-y-10 gap-x-10
+}
+
+.hero{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-content: center;
+  @apply gap-x-10 gap-y-10
+}
+
+.grid__container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  @apply gap-y-10 gap-x-10
+}
+
+.grid__meals{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  @apply gap-y-10 gap-x-10
+}
+
+.grid__test{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  @apply gap-10 
+}
+
+.grid__images{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  justify-items: center;
+}
+
+.grid__users__test{
+  grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+}
+
+.grid__pricing{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  @apply gap-10 justify-center
+  
+}
+
+.grid__pricing__features{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  @apply gap-10
+}
+
+.form__grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  @apply gap-10
+}
+
+.signin__grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  @apply gap-20
+}
+
+.loading{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.loaded{
+  opacity: 1;
+  transition: all 1s;
+}
